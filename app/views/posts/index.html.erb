@@ -1,0 +1,22 @@
+ <% if current_user.nil? %>
+<%= link_to 'Log In', new_user_session_path %>
+<% else %>
+<%= link_to 'Sign_out', destroy_user_session_path, :method => 'delete'  %>
+
+<% end %>
+
+<% @posts.each do |post| %>
+        <% if !current_user.nil?  %>
+            <% if signed_in? %>
+                <p class="float-right">
+            
+                </p>
+            <% end %>
+            <h4 class="float-left"><%=post.title %></h4>  
+            <p class="clear"><%= post.body %></p>
+        <% end %>
+<% end %>
+
+<% if signed_in? %>
+  <%= link_to "Create a Post", new_post_path %>
+<% end %>

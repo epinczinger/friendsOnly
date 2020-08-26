@@ -7,7 +7,7 @@
 [![GitHub2 Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/epinczinger/friendsOnly/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 </div>
-<p align="center">The goal of this project is to understand and implementation of authentication using the rails concept using the Devise gem </p>
+<p align="center">The goal of this project is to understand and implement authentication on  Ruby on Rails using the Devise gem.</p>
 
 
 ## Built With
